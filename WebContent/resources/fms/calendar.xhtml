@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:p="http://primefaces.org/ui">
+<head>
+<title>Custom Calendar component</title>
+</head>
+<body>
+
+	<composite:interface>
+		<composite:attribute name="id" />
+		<composite:attribute name="value" />
+		<composite:attribute name="label" />
+		<composite:attribute name="required" />
+	</composite:interface>
+
+	<composite:implementation>
+		<h:outputLabel id="#{cc.attrs.id}Label" value="#{cc.attrs.label}"
+			styleClass="outputText labelPaddingRight" for="#{cc.attrs.id}" />
+		<h:outputText value="#{bundle['label.STAR']}" rendered="#{cc.attrs.required}"
+			styleClass="mandatory labelPaddingRight"></h:outputText>
+		<p:calendar id="#{cc.attrs.id}" mode="popup" effect="slide"
+			value="#{cc.attrs.value}" pattern="#{bundle['PATTERN_DATE']}" label="#{cc.attrs.label}" navigator="true"
+			styleClass="labelPaddingRight" size="10" inputStyleClass="calendar" />
+	</composite:implementation>
+
+</body>
+</html>

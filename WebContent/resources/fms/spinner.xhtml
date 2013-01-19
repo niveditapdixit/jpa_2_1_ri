@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:p="http://primefaces.org/ui">
+<composite:interface>
+	<composite:attribute name="min" />
+	<composite:attribute name="label" />
+	<composite:editableValueHolder name="value"/>
+	<composite:attribute name="max" />
+	<composite:attribute name="stepFactor" />	
+	<composite:attribute name="id"/>
+	<composite:attribute name="required"/>
+</composite:interface>
+
+
+<composite:implementation>
+
+	<h:outputLabel value="#{cc.attrs.label}Label"
+		styleClass="outputText labelPaddingRight" for="#{cc.attrs.id}" />
+	<h:outputText value="#{bundle['label.STAR']}"
+		rendered="#{cc.attrs.required}"
+		styleClass="mandatory labelPaddingRight"></h:outputText>
+	<p:spinner id="value" min="#{cc.attrs.min}"
+							max="#{cc.attrs.max}"
+							stepFactor="#{cc.attrs.stepFactor}"
+							value="#{cc.attrs.value}"
+							label="#{cc.attrs.label}" styleClass="spinnerWidthHeight" />
+</composite:implementation>
+</html>

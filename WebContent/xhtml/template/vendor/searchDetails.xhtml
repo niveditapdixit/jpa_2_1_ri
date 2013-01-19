@@ -1,0 +1,42 @@
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+	<h:form id="vendorSearchForm">
+
+
+		<p:dataTable var="vendor" value="" paginator="true" rows="10"
+			onRowSelectComplete="vendorDetails.show()"
+			onRowSelectUpdate="display" paginatorPosition="bottom"
+			paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+			rowsPerPageTemplate="10,15" id="vendorDataTable" rowEditListener=""
+			dynamic="true">
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="Vendor Name" />
+				</f:facet>
+				<h:outputText value="" />
+			</p:column>
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="Year" />
+				</f:facet>
+				<h:outputText value="" />
+			</p:column>
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="Test" />
+				</f:facet>
+				<h:outputText value="" />
+			</p:column>
+			<p:column>
+				<f:facet name="header">
+					<h:outputText value="test2" />
+				</f:facet>
+				<h:outputText value="Test2" />
+			</p:column>
+		</p:dataTable>
+	</h:form>
+</ui:fragment>

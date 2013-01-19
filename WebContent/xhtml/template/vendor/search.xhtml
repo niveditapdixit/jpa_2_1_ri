@@ -1,0 +1,60 @@
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:fms="http://java.sun.com/jsf/composite/fms"
+	xmlns:p="http://primefaces.org/ui">
+
+	<p:panel header="Search Vendor" frame="box">
+		<h:form id="searchForm">
+
+			<h:panelGrid columns="2" styleClass="grid" cellspacing="5">
+
+				<h:panelGrid columns="1" styleClass="gridHeight">
+
+					<!--  search by vendor name -->
+					<fms:inputtext value="test" label="Vendor Name" id="testing"
+						readonly="false" required="false"></fms:inputtext>
+
+					
+
+				</h:panelGrid>
+
+			</h:panelGrid>
+
+			<h:panelGrid columns="1" styleClass="grid">
+				<h:panelGroup>
+					<p:commandButton value="Search" id="searchButton"
+						styleClass="formLevelButtons " ajax="true" update=""></p:commandButton>
+				</h:panelGroup>
+			</h:panelGrid>
+		</h:form>
+
+	</p:panel>
+
+	<p:panel id="searchDetail" header="Vendor Details " rendered="true">
+		<ui:include src="/xhtml/template/vendor/searchDetails.xhtml"></ui:include>
+	</p:panel>
+
+	<p:dialog header="Vendor Detail" widgetVar="vendorDetails"
+		resizable="false" width="400" visible="false" closable="true"
+		closeOnEscape="true" showEffect="slide" hideEffect="slide"
+		modal="true" appendToBody="true">
+
+
+		<h:panelGrid id="display" columns="2" cellpadding="4"
+			style="height:100px;">
+			<f:facet name="header">
+				<h:outputText value="" />
+			</f:facet>
+
+		</h:panelGrid>
+
+	</p:dialog>
+
+
+
+
+
+
+</ui:fragment>

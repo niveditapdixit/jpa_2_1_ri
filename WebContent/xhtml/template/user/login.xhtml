@@ -1,0 +1,36 @@
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:fms="http://java.sun.com/jsf/composite/fms"
+	xmlns:p="http://primefaces.org/ui">
+
+	<p:panel header="Login User" frame="box">
+		<h:form id="user">
+
+			<h:panelGrid columns="2" styleClass="grid" cellspacing="5">
+
+				<h:panelGrid columns="1" styleClass="gridHeight">
+
+					<!--  login -->
+					
+						<!--  search by employee name -->
+					<fms:inputtext value="115046" label="EmployeeId" id="EmployeeId"
+						readonly="false" required="false"></fms:inputtext>
+
+
+				</h:panelGrid>
+
+			</h:panelGrid>
+
+			<h:panelGrid columns="1" styleClass="grid">
+				<h:panelGroup>
+					<p:commandButton value="Login" id="LoginButton"
+						styleClass="formLevelButtons" ajax="true" update=""></p:commandButton>
+				</h:panelGroup>
+			</h:panelGrid>
+		</h:form>
+
+	</p:panel>
+
+</ui:fragment>

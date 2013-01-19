@@ -1,0 +1,60 @@
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+	<h:form>
+		<div id="banner">
+
+			<h:graphicImage library="images" name="jughyd.jpg" />
+			
+			<!-- 
+			<div class="welcomeUser" align="left">
+
+				<p align="left">
+					Welcome <br /> <strong>Nivedita</strong> <a href="#"></a>
+				</p>
+
+			</div>
+ -->
+
+
+
+			<div class="searchBox">
+				<h:selectOneMenu>
+					<f:selectItem itemLabel="Vendor"></f:selectItem>
+					<f:selectItem itemLabel="Menu"></f:selectItem>
+				</h:selectOneMenu>
+				<h:inputText id="search"></h:inputText>
+				<p:watermark for="search" value="Search" />
+				<a href="#" title="Search"></a>
+			</div>
+
+			<div id="menuTabs">
+				<ul class="clearFloat">
+					<li><a href="#">Home</a></li>
+					<li class="ACTIVE"><a href="welcome.xhtml?page=vendor/search">Vendor</a></li>
+					<li><a href="#">Menu</a></li>
+					<li><a href="#">Admin</a></li>
+				</ul>
+				<ul class="menuReports">
+					<li id="reports"><a href="#">Reports</a></li>
+					<li id="sitemap"><a href="#">Sitemap</a></li>
+					<li id="help"><a href="#">Help</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="titleBar">
+			<ui:insert name="titleBarHeading" />
+			<div>
+				<marquee>
+					<h:outputText value="Welcome Food vendor Management System!"
+						styleClass="titleBarScroll"></h:outputText>
+				</marquee>
+			</div>
+			<p>10-Jan-2013</p>
+		</div>
+		<br />
+
+	</h:form>
+</ui:fragment>

@@ -1,0 +1,560 @@
+@CHARSET "UTF-8";
+
+/* Widget Styles - STARTS */
+.ui-widget {
+	font-family: Arial;
+	font-weight: normal;
+}
+
+.ui-widget SELECT {
+	font-family: Arial;
+	font-size: 12px;
+	font-weight: normal;
+	margin-bottom: 6px;
+}
+
+.ui-widget TEXTAREA {
+	cursor: default;
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+	font-weight: normal;
+	margin-bottom: 6px;
+	color: #000000;
+}
+
+.ui-widget BUTTON {
+	font-family: Arial, Helvetica !important;
+	font-size: 11px !important;
+	color: #eeeeee;
+}
+
+.ui-widget INPUT {
+	font-family: Arial;
+	font-size: 11px;
+	font-weight: bold;
+}
+/* Widget Styles - STARTS */
+
+/* Prime Faces Panel - STARTS */
+.ui-panel {
+	padding: 0px;
+	margin: 6px;
+}
+
+.ui-panel-titlebar {
+	font-family: Arial, Helvetica !important;
+	font-weight: bold !important;
+	font-size: 13px !important;
+	color: #000000 !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-top: none !important;
+}
+
+.ui-panel-title {
+	font-family: Arial, Helvetica !important;
+	font-weight: bold !important;
+	font-size: 13px !important;
+	color: #000000 !important;
+}
+
+.ui-panel-content {
+	font-family: Arial, Helvetica !important;
+	font-weight: normal !important;
+	font-size: 12px !important;
+	color: #000000 !important;
+	background-color: #fdfdfd;
+}
+/* Prime Faces Panel - ENDS */
+
+/* Tabs - STARTS */
+.ui-tabs {
+	margin: 6px !important;
+	border: none !important;
+}
+
+.ui-tabs ul li {
+	height: 22px !important;
+	font-style: normal !important;
+}
+
+.ui-tabs ul li a {
+	
+}
+
+.ui-tabs ul li a em {
+	font-family: Arial !important;
+	font-style: normal !important;
+}
+
+.ui-tabs-nav {
+	background: none !important;
+	border: none !important;
+}
+
+.ui-tabs .ui-state-default {
+	background: url('../../resources/images/Strip_TabOff_New.png');
+	border: #b3c8dd 1px solid;
+}
+
+.ui-tabs-selected {
+	font-weight: bold !important;
+	background: url('../../resources/images/Strip_TabOn_New.png')
+		!important;
+	border: #bcbcbc 1px solid !important;
+}
+
+.ui-tabs-panel {
+	border: #bcbcbc 1px solid !important;
+	padding: 8px !important;
+}
+
+/* Tabs - ENDS */
+
+/* Data Table - STARTS */
+.ui-datatable {
+	color: #000000 !important;
+	white-space: normal !important;
+	margin: 6px;
+}
+
+.ui-datatable table thead tr th {
+	color: #000000 !important;
+	background: #a3b8de !important;
+	border-color: #8c8c8c !important;
+	border-style: solid !important;
+	border-width: 1px !important;
+	font-size: 12px !important;
+	font-weight: bold !important;
+	white-space: normal;
+	height: 30px;
+	font-family: Arial;
+	vertical-align: middle;
+	font-size: 12px !important;
+}
+
+.ui-datatable table tbody tr {
+	color: #000000 !important;
+	background: #fefefe !important;
+	border-color: #8c8c8c !important;
+	border-style: solid !important;
+	border-width: 1px !important;
+	font-size: 12px !important;
+	white-space: normal;
+	height: 15px;
+	font-family: Arial;
+	vertical-align: middle;
+}
+
+.ui-datatable table tbody tr td:FIRST-CHILD {
+	padding: 0px 0px 0px 0px !important;
+	vertical-align: middle !important;
+}
+
+.ui-datatable table tbody tr td {
+	padding: 0px 0px 0px 6px !important;
+	vertical-align: middle !important;
+}
+
+.ui-datatable table tbody tr td span {
+	padding: 0px !important;
+	vertical-align: middle !important;
+	height: 15px;
+}
+
+.ui-datatable-data {
+	padding: 0px;
+}
+
+.ui-datatable .ui-datatable-header {
+	text-align: left !important;
+}
+
+.ui-datatable-header {
+	background: #f4f5f5 !important;
+	border: #8c8c8c 1px solid !important;
+	border-bottom: none !important;
+	font-weight: bold !important;
+	white-space: normal;
+	height: 20px;
+	font-family: Arial;
+	vertical-align: middle;
+	font-weight: bold !important;
+}
+
+.ui-datatable-footer {
+	background: #f4f5f5 !important;
+	border: #8c8c8c 1px solid !important;
+	border-top: none !important;
+	font-weight: bold !important;
+	white-space: normal;
+	height: 20px;
+	font-family: Arial;
+	vertical-align: middle;
+	font-weight: bold !important;
+}
+
+.ui-selection-column {
+	
+}
+
+.ui-sortable-column {
+	
+}
+
+.ui-sortable-column-icon {
+	
+}
+
+.ui-expanded-row-content {
+	
+}
+
+.ui-row-toggler {
+	
+}
+
+.ui-editable-column {
+	height: 15px;
+}
+
+.ui-cell-editor {
+	height: 15px;
+}
+
+.ui-cell-editor-input INPUT {
+	margin-bottom: 6px;
+	margin-top: 6px;
+	margin-right: 6px;
+}
+
+.ui-cell-editor-input SELECT {
+	margin-bottom: 6px;
+	margin-top: 6px;
+	margin-right: 6px;
+}
+
+.ui-cell-editor-output {
+	height: 15px;
+}
+
+.ui-datatable-even {
+	
+}
+
+.ui-datatable-odd {
+	
+}
+
+.ui-paginator {
+	height: 21px;
+	background: #f7f7f7 !important;
+	font-family: Arial !important;
+	font-size: 8pt !important;
+}
+
+.ui-paginator-top {
+	background: #f7f7f7 !important;
+	border: #adaeb0 1px solid !important;
+	border-bottom: none !important;
+}
+
+.ui-paginator-bottom {
+	background: #f7f7f7 !important;
+	border: #adaeb0 1px solid !important;
+	border-top: none !important;
+}
+
+.ui-paginator select {
+	font-family: Arial !important;
+	font-size: 8pt !important;
+}
+
+.ui-datatable TR.ui-state-highlight {
+	background-color: #fefcc0 !important;
+}
+/* Data Table - ENDS */
+
+/* Info Messages - STARTS */
+.ui-messages-info {
+	background-color: #eef1fa !important;
+	border: #bac5ec 1px solid !important;
+	margin: 6px !important;
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #1a1a1a;
+	padding: 6px !important;
+}
+
+.ui-messages-info-summary {
+	
+}
+
+.ui-messages-info-detail {
+	line-height: 1.5 !important;
+}
+
+.ui-messages-info-icon {
+	background: transparent
+		url('../../resources/images/Icon_Success_New.png') no-repeat
+		scroll 0 0;
+}
+/* Info Messages - ENDS */
+
+/* Error Messages - STARTS */
+.errorFieldHighlight {
+	background-color: #fce6e3 !important;
+}
+
+.ui-messages-error {
+	background-color: #fce6e3 !important;
+	border: #f6998a 1px solid !important;
+	margin: 6px !important;
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #1a1a1a;
+	padding: 6px !important;
+}
+
+.ui-messages-error-summary {
+	
+}
+
+.ui-messages-error-detail {
+	line-height: 1.5 !important;
+}
+
+.ui-messages-error-icon {
+	background: transparent
+		url('../../resources/images/Icon_Error_Big.png') no-repeat
+		scroll 0 0;
+}
+
+/* Error Messages - ENDS */
+
+/* Warn or Alert Messages - STARTS */
+.ui-messages-warn {
+	background-color: #fefcc0 !important;
+	border: #febf39 1px solid !important;
+	margin: 6px !important;
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #1a1a1a;
+	padding: 6px !important;
+}
+
+.ui-messages-warn-summary {
+	
+}
+
+.ui-messages-warn-detail {
+	
+}
+
+.ui-messages-warn-icon {
+	background: transparent
+		url('../../resources/images/Icon_Alert_Big.png') no-repeat
+		scroll 0 0;
+}
+/* Warn or Alert Messages - ENDS */
+
+/* Fatal Messages - STARTS */
+.ui-messages-fatal {
+	
+}
+
+.ui-messages-fatal-summary {
+	
+}
+
+.ui-messages-fatal-detail {
+	
+}
+
+.ui-messages-fatal-icon {
+	
+}
+/* Fatal Messages - ENDS */
+
+/* Prime Faces Command Buttons - STARTS */
+.ui-button {
+	margin-right: 6px !important;
+}
+
+.ui-button-text-only {
+	font-family: Arial, Helvetica !important;
+	font-size: 11px !important;
+	color: #eeeeee;
+	padding-left: 4px !important;
+	padding-top: 2px !important;
+	padding-right: 4px !important;
+	padding-bottom: 2px !important;
+	line-height: 1 !important;
+}
+
+.ui-button-text {
+	font-family: Arial, Helvetica !important;
+	font-size: 11px !important;
+	color: #eeeeee;
+	padding-left: 4px !important;
+	padding-top: 2px !important;
+	padding-right: 4px !important;
+	padding-bottom: 2px !important;
+	line-height: 1 !important;
+}
+/* Prime Faces Command Buttons - ENDS */
+
+/* Prime Faces BreadCrumbs - STARTS */
+.ui-breadcrumb {
+	background: #ededed !important;
+	border: #bdbdbd 1px solid !important;
+	height: 26px !important;
+	padding: 0px !important;
+}
+
+.ui-breadcrumb ul {
+	margin-top: 4px !important;
+}
+
+.ui-breadcrumb ul li a {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 11px;
+	color: #1052b6 !important;
+	margin-left: 8px;
+	margin-right: 8px;
+	text-decoration: none;
+}
+
+.ui-breadcrumb ul li a:HOVER {
+	text-decoration: underline !important;
+	color: #1a1a1a !important;
+}
+
+.ui-breadcrumb ul li.first a {
+	
+}
+
+.ui-breadcrumb ul li.last a {
+	color: #1a1a1a !important;
+	font-weight: bold !important;
+}
+
+
+/* Prime Faces BreadCrumbs - ENDS */
+
+/* Prime Faces Icons - STARTS */
+.ui-icon-circle-triangle-w {
+	background-image: url(../../resources/images/Icon_Collapse.png)
+		!important;
+	background-repeat: no-repeat;
+	background-position: center !important;
+}
+
+.ui-icon-circle-triangle-e {
+	background-image: url(../../resources/images/Icon_Expand.png)
+		!important;
+	background-repeat: no-repeat;
+	background-position: center !important;
+}
+
+.ui-icon-minusthick {
+	background-image:
+		url(../../resources/images/Icon_Minus_New_16x16.png) !important;
+	background-repeat: no-repeat;
+	background-position: center !important;
+}
+
+.ui-icon-plusthick {
+	background-image:
+		url(../../resources/images/Icon_Plus_New_16x16.png) !important;
+	background-repeat: no-repeat;
+	background-position: center !important;
+}
+
+.ui-icon-closethick {
+	background-image:
+		url(../../resources/images/Icon_Close_16x16.png) !important;
+	background-repeat: no-repeat;
+	background-position: center !important;
+}
+
+.ui-icon-pencil {
+	background-image:
+		url(../../resources/images/Icon_Pencil_12x12.png) !important;
+	background-repeat: no-repeat;
+	background-position: center !important;
+	margin-left: 11px;
+}
+
+.ui-icon-check {
+	background-image: url(../../resources/images/Icon_Save_12x12.png)
+		!important;
+	background-repeat: no-repeat;
+	background-position: center !important;
+	margin-left: 6px;
+}
+
+.ui-icon-close {
+	background-image:
+		url(../../resources/images/Icon_Cancel2_12x12.png) !important;
+	background-repeat: no-repeat;
+	background-position: center !important;
+	margin-left: 3px;
+}
+
+.ui-icon-seek-first {
+	background-image:
+		url(../../resources/images/Icon_First_Active_New.png)
+		!important;
+	background-repeat: no-repeat;
+	background-position: center !important;
+}
+
+.ui-icon-seek-end {
+	background-image:
+		url(../../resources/images/Icon_Last_Active_New.png) !important;
+	background-repeat: no-repeat;
+	background-position: center !important;
+}
+
+.ui-icon-seek-prev {
+	background-image:
+		url(../../resources/images/Icon_Prev_Active_New.png) !important;
+	background-repeat: no-repeat;
+	background-position: center !important;
+}
+
+.ui-icon-seek-next {
+	background-image:
+		url(../../resources/images/Icon_Next_Active_New.png) !important;
+	background-repeat: no-repeat;
+	background-position: center !important;
+}
+
+
+.menuitemselected {
+      background-image:
+            url(../../resources/images/Strip_LeftNav_L2_Active.png);
+      background-repeat: repeat;
+      font-weight: bold;
+      font-size: 11px;      
+}
+
+
+.menuItem{
+      background-image:
+            url(../../resources/images/Strip_LeftNav_L2.png);
+      background-repeat: repeat;
+}
+
+
+
+
+
+
+
+/* Prime Faces Icons - ENDS */

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:p="http://primefaces.org/ui">
+<composite:interface>
+	<composite:attribute name="selectItemValue" />
+	<composite:attribute name="label" />
+	<composite:attribute name="value" />
+	<composite:attribute name="itemValue" />
+	<composite:attribute name="itemLabel" />
+	<composite:attribute name="var" />
+	<composite:attribute name="id" />
+	<composite:attribute name="required" />
+</composite:interface>
+
+
+<composite:implementation>
+
+	<h:outputLabel value="#{cc.attrs.label}"
+		styleClass="outputText labelPaddingRight" for="#{cc.attrs.id}" />
+	<h:outputText value="#{bundle['label.STAR']}"
+		rendered="#{cc.attrs.required}"
+		styleClass="mandatory labelPaddingRight"></h:outputText>
+	<h:selectOneMenu id="#{cc.attrs.id}" styleClass="dropdown medium"
+		value="#{cc.attrs.value}" required="true" label="#{cc.attrs.label}">
+		<f:selectItems value="#{cc.attrs.selectItemValue}"
+			var="#{cc.attrs.var}" itemValue="#{cc.attrs.itemValue}"
+			itemLabel="#{cc.attrs.itemLabel}"></f:selectItems>
+	</h:selectOneMenu>
+</composite:implementation>
+</html>

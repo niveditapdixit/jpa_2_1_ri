@@ -1,0 +1,1015 @@
+@CHARSET "UTF-8";
+
+/* Main Setup */
+/********************************/
+/*	Standard HTML Elements */
+/********************************/
+h1,h2,h3 {
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1em;
+	margin-top: 20px;
+}
+
+form {
+	width: 100%;
+	border: 0;
+}
+
+body {
+	font-size: 11px;
+	font-family: Arial, Helvatica;
+}
+
+input[type="text"] {
+	cursor: auto;
+	border-color: #87AFC7;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #000000;
+	vertical-align: middle;
+}
+
+textarea[type="text"] {
+	cursor: default;
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #000000;
+}
+
+input[disabled],input[readonly],select[disabled],select[readonly],checkbox[disabled],checkbox[readonly],textarea[disabled],textarea[readonly]
+	{
+	background-color: #dcdcdc;
+	cursor: default;
+	border-color: #87AFC7;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+/***********************************************/
+/*Customized Style Classes for different widhth*/
+/***********************************************/
+.short {
+	width: 5em;
+}
+
+.medium {
+	width: 8em;
+}
+.autocomplete{
+	width: 7.5em;
+	height:10px;
+}
+
+.long {
+	
+}
+
+/*****************************************/
+/*Customized Style Classes for components*/
+/*****************************************/
+.breadcrumbLink {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 11px;
+	color: #1052b6 !important;
+	margin-left: 8px;
+	margin-right: 8px;
+	text-decoration: none;
+}
+
+.breadcrumbLink:hover {
+	text-decoration: underline;
+	color: #1a1a1a;
+}
+
+.breadcrumbStatic {
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	font-size: 11px;
+	color: #1a1a1a !important;
+	margin-left: 8px;
+	margin-right: 8px;
+	text-decoration: none;
+}
+
+.breadcrumb {
+	background: #f1f1f1;
+	border-color: #bdbdbd;
+	border-width: 1px;
+	height: 28px;
+}
+
+.commandLink {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #1052b6;
+	text-decoration: none;
+}
+
+.commandLink:hover {
+	text-decoration: underline;
+	color: #1a1a1a;
+}
+
+.outputLink {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #1052b6 !important;
+	text-decoration: none;
+}
+
+.outputLink:hover {
+	text-decoration: underline;
+	color: #1a1a1a !important;
+}
+
+.link {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #1052b6;
+	text-decoration: none;
+}
+
+.link:hover {
+	text-decoration: underline;
+	color: #1a1a1a;
+}
+
+/****************************
+*Styleclass for hyperlink 1 *
+****************************/
+.hyperLinkstyle1 {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #1052b6;
+	background-color: #c2d2e0;
+	background-repeat: repeat-x;
+	border-top: 1px;
+	border-bottom: 1px;
+	border-left: 1px;
+	border-right: 1px;
+	text-decoration: none;
+	padding-left: 6px;
+	padding-right: 6px;
+	height: 25px;
+}
+
+.hyperLinkstyle1:hover {
+	text-decoration: underline;
+	color: #1a1a1a;
+}
+
+/****************************
+*Styleclass for hyperlink 2 *
+****************************/
+.hyperLinkstyle2 {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #1052b6;
+	background-color: #c2d2e0;
+	background-repeat: repeat-x;
+	border-top: 1px;
+	border-bottom: 1px;
+	border-left: 1px;
+	border-right: 1px;
+	text-decoration: none;
+	padding-left: 6px;
+	padding-right: 6px;
+	height: 25px;
+}
+
+.hyperLinkstyle2:hover {
+	text-decoration: underline;
+	color: #1a1a1a;
+}
+
+.outputLabel {
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	font-size: 12px;
+	color: #1a1a1a;
+}
+
+.inputText {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #000000;
+	margin-bottom: 5px;
+	cursor: text;
+}
+
+.outputText {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #1a1a1a;
+}
+
+
+.formLevelButtons {
+	font-family: Arial, Helvetica;
+	font-weight: bold !important;
+	font-size: 11px !important;
+	height: 24px !important;
+}
+
+.leftMenuLevel2Inactive {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 0.688em;
+	color: #000000;
+	border-color: #a1b8df;
+	border-width: 1px;
+	height: 24px;
+}
+
+.leftMenuLevel2Active {
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	font-size: 0.688em;
+	color: #000000;
+	border-color: #a1b8df;
+	border-width: 1px;
+	height: 24px;
+}
+
+/***************************
+*Styleclass for background color for group field *
+***************************/
+.groupedFieldsGrid,.groupedFieldsGrid td {
+	background-color: #EEEEEE;
+	padding-right: 8px;
+}
+
+/***************************
+*Styleclass for inputs in the form *
+***************************/
+.formFieldText,.formFieldText td {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #000000;
+	margin-bottom: 5px;
+	border: 0px;
+}
+
+/***************************
+*Styleclass for labels in the form *
+***************************/
+.formLabelText,.formLabelText td {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12Px;
+	color: #1a1a1a;
+	padding-right: 8px;
+}
+
+/***************************
+*Styleclass for subtitles in the form *
+***************************/
+.formSubTitle,.formSubTitle td {
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	font-size: 12Px;
+	color: #1a1a1a;
+}
+
+/***************************
+*For the header in the data table *
+***************************/
+.ContentListingHeaderlevel1 {
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	font-size: 12px;
+	color: #1a1a1a;
+}
+
+/***************************
+*For the sub-header in the data table *
+***************************/
+.ContentListingHeaderlevel2 {
+	font-family: Arial, Helvetica;
+	font-weight: bold; `
+	font-size: 11px;
+	color: #1a1a1a;
+}
+
+/***************************
+*For the background color of the header and sub-header in the data table *
+***************************/
+.ContentListingHeader {
+	background-color: #f7f7f7;
+	border-color: #adaeb0;
+	border-width: 1px;
+	height: 48px;
+}
+
+/***************************
+*For the panel header *
+***************************/
+.panelHeader {
+	font-family: Arial, Helvetica !important;
+	font-weight: normal !important;
+	font-size: 13px !important;
+	color: #000000 !important;
+	margin: 6px;
+	border: none;
+}
+
+/***************************
+*For the panel content and border *
+***************************/
+.panelContent,.panelContent .ui-panel-content {
+	background: #FDFDFD none repeat scroll 0 0;
+	border-color: #898c95;
+	border-width: 1px;
+}
+
+/***********************************************
+*For the background color of the footer the data table *
+*******************************************************/
+.footerForDataTable {
+	background-color: #f7f7f7;
+	border-color: #adaeb0;
+	border-width: 1px;
+	height: 35px;
+}
+
+.mandatory {
+	color: red;
+}
+
+.floatRight {
+	float: right;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.commandButtonSpace {
+	padding-right: 6px;
+}
+
+.labelPaddingRight {
+	padding-right: 8px;
+}
+
+.whiteSpacePre {
+	white-space: pre;
+}
+
+.fullPageWidth {
+	width: 100%;
+}
+
+/* Primefaces Error,Info,Alert Messages Overriding */
+.ui-messages-info {
+	background-color: #CCFF99;
+	border-color: #33FF99;
+	color: black;
+	margin-top: 12px;
+	margin-right: 12px;
+}
+
+.ui-messages-info-detail {
+	font-weight: bold;
+	font-family: tahoma;
+	font-size: 1em;
+}
+
+.ui-messages-error {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #1a1a1a;
+	background-color: #fce6e3;
+	border-color: #f6998a;
+	border-width: 1px;
+}
+
+.ui-message-error {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #1a1a1a;
+	background-color: #fce6e3;
+	border-color: #f6998a;
+	border-width: 1px;
+}
+
+.ui-dialog-titlebar {
+	background: transparent
+		url('../../resources/images/Panel_header_strip.png') repeat scroll 0 0;
+}
+
+.ui-messages-info,.ui-messages-warn,.ui-messages-error,.ui-messages-fatal
+	{
+	border: 0px;
+	margin: 12px 12px;
+	padding: 12px;
+}
+
+.ui-message-error-icon {
+	background: transparent
+		url('../../resources/images/ico_error_small.png') no-repeat scroll 0 0;
+}
+
+.ui-messages-error-icon {
+	background: transparent url('../../resources/images/ico_error.png')
+		no-repeat scroll 0 0;
+}
+
+.ui-messages-info-icon {
+	background: transparent url('../../resources/images/ico_success.png')
+		no-repeat scroll 0 0;
+}
+
+.ui-message-error-detail {
+	width: 200px;
+}
+
+.confirmDialog {
+	width: 380px;
+	height: 60px;
+}
+
+.alignCenter {
+	text-align: center;
+}
+
+.gridDataCenter {
+	text-align: center;
+}
+
+.padding8LeftRight {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.ui-input-invalid {
+	background-color: #fce6e3;
+}
+
+.padded-td {
+	padding-top: 5px;
+	padding-bottom: 8px;
+}
+
+.summary-columns {
+	padding-bottom: 8px;
+	padding-top: 8px;
+}
+
+.addButtonImage {
+	height: 15px;
+	width: 15px;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+.spinnerWidthHeight {
+	width: 4em;
+	height: 10px;
+}
+
+.panelgrp {
+	display: block;
+	float: right;
+	text-align: left
+}
+
+.panelgrid {
+	height: 250px;
+}
+
+.grid {
+	width: 100%;
+	background-color: #f3f5f8;
+}
+
+.gridHeight{
+height:100px;
+}
+
+.calendar{
+height:10px;
+width: 7.5em;
+}
+.main{
+color:maroon;
+text-shadow: aqua;
+font-size: 26pt;
+text-align:center;
+}
+
+
+@CHARSET "UTF-8";
+
+/* Standard HTML Elements - STARTS */
+h1,h2,h3 {
+	margin-top: 0;
+	font-family: Arial;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-family: Arial;
+}
+
+h2 {
+	font-size: 1.6em;
+	font-family: Arial;
+}
+
+h3 {
+	font-size: 1em;
+	margin-top: 20px;
+	font-family: Arial;
+}
+
+form {
+	width: 100%;
+	border: 0;
+	font-family: Arial;
+}
+
+input[type="text"] {
+	cursor: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #87AFC7;
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #000000;
+	vertical-align: middle;
+	margin-bottom: 6px;
+}
+
+input[disabled],input[readonly],select[disabled],select[readonly],checkbox[disabled],checkbox[readonly],textarea[disabled],textarea[readonly]
+	{
+	background-color: #e5e5e5;
+	cursor: default;
+	border-color: #dddddd;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+}
+/* Standard HTML Elements - STARTS */
+
+/* Basic Style Classes - STARTS */
+.mandatory {
+	color: red;
+	font-weight: bold;
+	padding-right: 12px;
+}
+
+.floatRight {
+	float: right;
+}
+
+.floatLeft {
+	float: left;
+}
+
+.whiteSpacePre {
+	white-space: pre;
+}
+
+.short {
+	width: 5em;
+}
+
+.medium {
+	width: 8em;
+}
+
+.long {
+	width: 11em;
+}
+
+.selectShort {
+	width: 5.30em;
+}
+
+.selectMedium {
+	width: 8.30em;
+}
+
+.selectLong {
+	width: 11.30em;
+}
+/* Basic Style Classes - ENDS */
+
+/* Grouped Fields Grid - STARTS */
+.groupedFieldsGrid,.groupedFieldsGrid td {
+	background-color: #f1f3f6;
+	padding-right: 2px;
+}
+/* Grouped Fields Grid - ENDS */
+
+/* Form Field Text - STARTS */
+.formFieldText,.formFieldText td {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #000000;
+	border: 0px;
+}
+/* Form Field Text - ENDS */
+
+/* Form Label Text - STARTS */
+.formLabelText,.formLabelText td {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12Px;
+	color: #1a1a1a;
+	padding-right: 12px;
+}
+
+.formLabelTextMandatory,.formLabelTextMandatory td {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12Px;
+	color: #1a1a1a;
+}
+/* Form Field Text - ENDS */
+
+/* Form Field Text - Read Only - STARTS */
+.formFieldTextReadOnly,.formFieldTextReadOnly td {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #000000 !important;
+	background-color: #e9eae6 !important;
+	margin-bottom: 6px !important;
+	padding: 2px !important;
+	border: 0px !important;
+}
+/* Form Field Text - Read Only - STARTS */
+
+/* Form Sub Titles - STARTS */
+.formSubTitle,.formSubTitle td {
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	font-size: 12Px;
+	color: #1a1a1a;
+}
+/* Form Sub Titles - ENDS */
+
+/* HyperLinks - STARTS */
+.commandLink {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	color: #1052b6 !important;
+	text-decoration: none;
+	margin-right: 6px !important;
+}
+
+.commandLink:HOVER {
+	text-decoration: underline;
+	color: #1a1a1a !important;
+}
+
+.hyperLinkstyle1 {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	text-decoration: none;
+	color: #1052b6 !important;
+	background: url('../images/Strip_HL1.png') !important;
+	background-repeat: repeat-x;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #e1e1e1;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-right: 6px !important;
+}
+
+.hyperLinkstyle1:HOVER {
+	text-decoration: underline;
+	color: #1a1a1a !important;
+}
+
+.hyperLinkstyle2 {
+	font-family: Arial, Helvetica;
+	font-weight: normal;
+	font-size: 12px;
+	text-decoration: none;
+	color: #1052b6 !important;
+	background: url('../images/Strip_HL2.png') !important;
+	background-repeat: repeat-x;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #a6b5d0;
+	padding-left: 6px;
+	padding-right: 6px;
+	margin-right: 6px !important;
+}
+
+.hyperLinkstyle2:HOVER {
+	text-decoration: underline;
+	color: #1a1a1a !important;
+}
+/* HyperLinks - ENDS */
+
+/* Panel Level / Grid Level Buttons - STARTS */
+.panelLevelButtons {
+	height: 21px;
+	font-weight: normal !important;
+	border-color: #81a4c7;
+	border-width: 1px;
+	border-style: solid;
+	background: url('../images/Strip_GrdBtn.png') !important;
+	background-repeat: repeat-x;
+}
+
+.panelLevelButtons:HOVER {
+	height: 21px;
+	font-weight: normal !important;
+	border-color: #a4a4a4;
+	border-width: 1px;
+	border-style: solid;
+	background: url('../images/Strip_GrdBtn_Hover.png') !important;
+	background-repeat: repeat-x;
+}
+
+.tableLevelButtons {
+	float: left;	
+}
+/* Panel Level / Grid Level Buttons - ENDS */
+
+/* Form Level Buttons - STARTS */
+.formLevelButtons {
+	height: 25px;
+	padding-right: 12px !important;
+	padding-left: 12px !important;
+	font-weight: bold !important;
+	border-color: #81a4c7;
+	border-width: 1px;
+	border-style: solid;
+	background: url('../images/Strip_FrmBtn.png') !important;
+	background-repeat: repeat-x;
+}
+
+.formLevelButtons:HOVER {
+	height: 25px;
+	font-weight: bold !important;
+	border-color: #a4a4a4;
+	border-width: 1px;
+	border-style: solid;
+	background: url('../images/Strip_FrmBtn_Hover.png') !important;
+	background-repeat: repeat-x;
+}
+/* Form Level Buttons - ENDS */
+
+/* Image Buttons - STARTS */
+.imageButton {
+	height: 15px;
+	width: 15px;
+	padding-right: 5px;
+	margin-bottom: 3px;
+	vertical-align: middle;
+}
+/* Image Buttons - ENDS */
+
+/* Style Classes - Flags - STARTS */
+.flagStyleR {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #ccff99;
+	border-color: #92d050;
+	margin-right: 6px;
+}
+
+.flagStyleT {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #ffff99;
+	border-color: #fdae1a;
+	margin-right: 6px;
+}
+
+.flagStyleV {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #ffcad5;
+	border-color: #f48ab3;
+	margin-right: 6px;
+}
+
+.flagStyleL {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #cdf8fc;
+	border-color: #71bfd2;
+	margin-right: 6px;
+}
+
+.flagStyleH {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #eae7a8;
+	border-color: #c7b836;
+	margin-right: 6px;
+}
+
+.flagStyleW {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #e7ceff;
+	border-color: #9027b8;
+	margin-right: 6px;
+}
+
+.flagStyleS {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #d9f282;
+	border-color: #85a446;
+	margin-right: 6px;
+}
+
+.flagStyleD {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #facca7;
+	border-color: #f28226;
+	margin-right: 6px;
+}
+
+.flagStyleE {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #dacfcf;
+	border-color: #6f5555;
+	margin-right: 6px;
+}
+
+.flagStyleB {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #c8d6e6;
+	border-color: #7395bf;
+	margin-right: 6px;
+}
+
+.flagStyleO {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #edcdcb;
+	border-color: #cd736b;
+	margin-right: 6px;
+}
+
+.flagStyleA {
+	font-family: Arial;
+	font-weight: bolder;
+	font-size: 12px;
+	color: #000000;
+	border-width: 1px;
+	border-style: solid;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+	background-color: #f06ca8;
+	border-color: #bf407a;
+	margin-right: 6px;
+}
+/* Style Classes - Flags - ENDS */
+
+/* Calendar Input Box - STARTS */
+.calendarInputBox INPUT {
+	height: 10px;
+	vertical-align: 0px;
+	margin-bottom: 6px;
+	width: 7.5em;
+	background: none !important;
+}
+/* Calendar Input Box - ENDS */
+.pageHeader {
+	font-family: Arial, Helvetica;
+	font-weight: bold;
+	font-size: 16px;
+	color: #AAAAAA;
+	margin-bottom: 5px;
+}

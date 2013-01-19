@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:composite="http://java.sun.com/jsf/composite"
+	xmlns:p="http://primefaces.org/ui">
+
+<composite:interface>
+	<composite:attribute name="id"/>
+	<composite:editableValueHolder name="value"/>
+	<composite:attribute name="label" />
+	<composite:attribute name="readonly" />
+	<composite:attribute name="required" default="false"/>
+	<composite:attribute name="maxlength" default="9999"/>
+</composite:interface>
+
+<composite:implementation>
+
+	<h:outputLabel id="#{cc.attrs.id}Label"
+		value="#{cc.attrs.label}"
+		styleClass="outputText labelPaddingRight" for="#{cc.attrs.id}" />
+		<h:outputText value="#{bundle['label.STAR']}" rendered="#{cc.attrs.required}"
+								styleClass="mandatory labelPaddingRight"></h:outputText>
+
+	<h:inputText id="#{cc.attrs.id}Val" styleClass="inputText medium"
+		value="#{cc.attrs.value}"
+		required="#{cc.attrs.required}" label="#{cc.attrs.label}" readonly="#{cc.attrs.readonly}" maxlength="#{cc.attrs.maxlength}">
+	</h:inputText>
+</composite:implementation>
+
+
+</html>
