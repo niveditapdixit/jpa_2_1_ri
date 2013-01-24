@@ -1,0 +1,37 @@
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.prime.com.tr/ui">
+	
+	<p:outputPanel id="footer_panel" >	
+	
+	
+	<p:graphicImage url="../../resources/images/GEM_Logo_APL_NOL.png"
+		styleClass="logoFooter" />
+	  <h:panelGroup styleClass="footerPanelGroup">
+	  	<h:panelGrid columns="1">
+				<h:outputText value="@ 2011 NOL" styleClass="outputTextfooter" >
+				</h:outputText>			
+			
+		<h:panelGrid columns="9" styleClass="panelGridFooter">
+				
+				<h:link value="Home" styleClass="linkFooter"></h:link>
+				<h:outputText value="|" styleClass="outputTextFooter"></h:outputText>
+				<h:link value="Help" styleClass="linkFooter"></h:link>
+				<h:outputText value="|" styleClass="outputTextFooter"></h:outputText>
+				<h:link value="SiteMap" styleClass="linkFooter"></h:link>
+				<h:outputText value="|" styleClass="outputTextFooter"></h:outputText>				
+				<h:link value="Reports" styleClass="linkFooter"></h:link>
+				<h:outputText value="|" styleClass="outputTextFooter"></h:outputText>
+				<h:link value="Support" styleClass="linkFooter"></h:link>			
+		</h:panelGrid>
+		</h:panelGrid>
+			
+	  </h:panelGroup>
+	
+</p:outputPanel>
+		
+	
+</ui:fragment>
+<!-- jsf:pagecode language="java" location="/src/pagecode/gem_ui_template/Footer.java" --><!-- /jsf:pagecode -->

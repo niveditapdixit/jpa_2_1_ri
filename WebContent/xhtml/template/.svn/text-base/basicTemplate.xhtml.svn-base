@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.prime.com.tr/ui">
+<h:head>
+	<title><ui:insert name="title">#{bundle['title.GLOBAL_EQUIPMENT_MANAGEMENT']}</ui:insert></title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+	
+		<link rel="stylesheet" href="../../resources/css/gemResetIE8.css"
+		type="text/css" />
+	<link rel="stylesheet" href="../../resources/css/gemLayoutIE8.css"
+		type="text/css" />
+	<link rel="stylesheet" href="../../resources/css/gemSkinIE8.css"
+		type="text/css" />
+	<link rel="stylesheet" href="../../resources/css/gemMainIE8.css"
+		type="text/css" />
+		<link rel="stylesheet" href="../../resources/css/gemMain.css"
+		type="text/css" />
+
+</h:head>
+<f:view contentType="text/html">
+	<body id="body">
+	<h:outputStylesheet library="css" name="gemResetIE8.css" target="head" />
+	<h:outputStylesheet library="css" name="gemLayoutIE8.css" target="head" />
+	<h:outputStylesheet library="css" name="gemSkinIE8.css" target="head" />
+	<h:outputStylesheet library="css" name="gemMainIE8.css" target="head" />
+	<h:outputStylesheet library="css" name="gemMain.css" target="head" />
+	<p:layout styleClass="layoutBody">
+		
+		<p:layoutUnit id="header" position="top" resizable="false"
+			height="126" gutter="0">
+			<ui:include src="/xhtml/template/header.xhtml" />
+		</p:layoutUnit>
+
+		<p:layoutUnit id="left" position="left" width="184" collapsible="true"
+			minWidth="200" gutter="0">
+			<ui:include src="/xhtml/template/left.xhtml" />
+		</p:layoutUnit>
+		
+		<p:layoutUnit id="content" position="center" scrollable="null"
+			width="400" gutter="0">
+			<p:messages id="messages" showDetail="true" showSummary="false"></p:messages>
+			<ui:insert name="content" />
+		</p:layoutUnit>
+		
+	</p:layout>
+	
+	<p:layoutUnit id="footer" position="center" scrollable="false" width="98">		
+		<ui:insert name="left" />
+		<ui:include src="/xhtml/template/footer.xhtml"></ui:include>
+	</p:layoutUnit>
+
+	</body>
+</f:view>
+
+</html>

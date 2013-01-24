@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1218"
+   name=""
+   committed-date="2011-08-14T13:35:33.058022Z"
+   url="http://bhukrk219299d/svn/GEM_RI/branches/GEM_RI_V7_DEVELOPMENT_BRANCH/GemRiWeb/WebContent/xhtml/template"
+   last-author="nivedita_dixit"
+   kind="dir"
+   uuid="2413b312-d1bf-a74b-aca6-b78f004343d5"
+   repos="http://bhukrk219299d/svn"
+   revision="1662"/>
+<entry
+   committed-rev="1218"
+   name="header.xhtml"
+   text-time="2011-08-22T10:10:01.041629Z"
+   committed-date="2011-08-14T13:35:33.058022Z"
+   checksum="aafcf0dafdeb6cfd40fcb56e87c602eb"
+   last-author="nivedita_dixit"
+   kind="file"
+   prop-time="2011-08-22T10:10:00.997629Z"/>
+<entry
+   committed-rev="1077"
+   name="left.xhtml"
+   text-time="2011-08-10T13:57:19.089702Z"
+   committed-date="2011-08-10T09:39:52.572006Z"
+   checksum="d84461699da5be13da0146066bfd573c"
+   last-author="purjeet_das"
+   kind="file"
+   prop-time="2011-08-10T13:57:18.592702Z"/>
+<entry
+   committed-rev="1113"
+   name="basicTemplate.xhtml"
+   text-time="2011-08-10T17:03:11.824621Z"
+   committed-date="2011-08-10T16:44:00.041201Z"
+   checksum="3c3bb4dce676385e771eec6aab89601f"
+   last-author="nabendu_bhuiya"
+   kind="file"
+   prop-time="2011-08-10T17:03:11.808619Z"/>
+<entry
+   committed-rev="25"
+   name="right.xhtml"
+   text-time="2011-06-24T08:13:10.287844Z"
+   committed-date="2011-02-25T06:31:34.977359Z"
+   checksum="ac72da1873faea1a953ea6e0915c806d"
+   last-author="kaustubh_dasgupta"
+   kind="file"
+   prop-time="2011-06-24T08:13:10.209844Z"/>
+<entry
+   committed-rev="1011"
+   name="footer.xhtml"
+   text-time="2011-08-10T13:57:19.110702Z"
+   committed-date="2011-08-09T08:50:04.752414Z"
+   checksum="33debb16e07c72d5961238db56ccb5ae"
+   last-author="purjeet_das"
+   kind="file"
+   prop-time="2011-08-10T13:57:18.788702Z"/>
+</wc-entries>
